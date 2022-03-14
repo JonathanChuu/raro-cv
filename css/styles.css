@@ -2,7 +2,7 @@
 
 body{
     margin: 1% 2% ;
-    background-color: #F4FCD9;
+    background-color: #203239;
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -13,10 +13,32 @@ header h1{
     font-weight: 600;
 }
 
+header img {
+    max-width: 15px;
+    margin: 0 0 1px 3px;
+}
 
-header{
-    background-color: #C5D8A4;
+header address {
+    font-style: normal;
+}
+
+header address a{
+    color: #203239;
+    text-decoration: none;
+}
+
+header, .fundoArtigo{
+    background-color: #EEEDDE;
     padding: 15px;
-    border-radius: 13px;
+    border-radius: 8px;
+}
+.fundoArtigo {
+    margin-top: 20px;    
+}
+
+hr {
+    border: 1px solid #EEEDDE;
+    margin-top: 20px;
+    width: 100%;
 }
 
