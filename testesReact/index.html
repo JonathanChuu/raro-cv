@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>estudo React</title>
+    </head>
+
+    <body>
+
+        <div id="root"></div>
+        <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+
+
+        <script type="text/babel">
+            const rootElement = document.getElementById('root')
+            // const element = document.createElement('div')
+            // element.textContent = 'Hello world'
+            // element.className = 'container'
+
+            const Message = ({children}) => <div className = 'divMessage'>{children}</div>
+            
+
+            // aqui a gente ta criando o mesmo elemento que o do html acima, mas usando react
+            const element = (
+                <div className='container'>
+                    <Message>ola mundo</Message>
+                    <Message>adeus mundo</Message>
+                </div>
+            )
+
+
+            // isso daqui faz a integração com a arvore DOM html
+            ReactDOM.render(element, rootElement)
+
+
+        </script>
+
+    </body>
+</html>
